@@ -37,7 +37,7 @@ const Help = ({
   const mailtoHref = 'mailto:Aleksandra.Veselova@agr.auto?subject=' + fullName + '/ увольнение' + '&cc=Extern.Konstantin.Suvorov@agr.auto&body=' + emailBody;
   
   const emailBodyIssue = 'Добрый день, коллеги,' + ' Сотрудник ' + fullName + ' повредил/ потерял оборудование. Акт и фото во вложении.';
-  const mailAboutIssue = 'mailto:Maria.Novinkova@agr.auto, Olga.Safronova@agr.auto?subject=' + fullName + '/ увольнение' + '&cc=Extern.Konstantin.Suvorov@agr.auto&body=' + emailBodyIssue;
+  const mailAboutIssue = 'mailto:Maria.Novinkova@agr.auto; Olga.Safronova@agr.auto?subject=' + fullName + '/ увольнение' + '&cc=Extern.Konstantin.Suvorov@agr.auto&body=' + emailBodyIssue;
 
   const emailBodyToMegafon = 'Добрый день, Просьба заблокировать и удалить персональные данные номеров: ' + pNumber + '. Кодовое слово – Лето / LETO.';
   const mailToMegafon = 'mailto:top@Megafon.ru?subject=' + pNumber + '&cc=stanislav.v.sotnik@megafon.ru&body=' + emailBodyToMegafon;

@@ -10,7 +10,7 @@ import Footer from "../(components)/footer";
 const MainPage = () => {
   const [ history, setHistory ] = useState<boolean>(false);
   const [ equipment, setEquipment ] = useState<boolean>(false);
-  const [ count, setCount ] = useState<number>(1);
+  const [ count, setCount ] = useState<number>(0);
   const [ progress, setProgress ] = useState<boolean>(false);
   const [ firstName, setFirstName ] = useState<string>('');
   const [ lastName, setLastName ] = useState<string>('');
@@ -52,9 +52,9 @@ const MainPage = () => {
 
   const updateCounter = (completed: boolean) => {
     if (completed) {
-      setCount(count+1);
-    } else {
       setCount(count-1);
+    } else {
+      setCount(count+1);
     }
   };  
 

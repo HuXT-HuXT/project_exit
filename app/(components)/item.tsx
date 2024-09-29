@@ -30,12 +30,10 @@ const Item = ({
   useEffect(() => {
     if (state === false) {
       setProgress('Не выполнено');
-      setStyle('py-4 px-4 flex justify-between bg-orange-200 rounded-lg border-2 border-red-500');
-      updateCounter(state);
+      setStyle('py-4 px-4 flex justify-between bg-orange-200 rounded-lg border-2 border-red-500');      
     } else {
       setProgress('Выполнено');
-      setStyle('py-4 px-4 flex justify-between bg-orange-200 rounded-lg border-2 border-emerald-500');
-      updateCounter(state);
+      setStyle('py-4 px-4 flex justify-between bg-orange-200 rounded-lg border-2 border-emerald-500');      
     }
   }, [state]);  
 
@@ -50,7 +48,7 @@ const Item = ({
         </div>          
         <div className="w-[140px] flex justify-between">
           <p className="self-center">{progress}</p>
-          <input type="checkbox" className="w-4 h-4 self-center hover:cursor-pointer" onClick={() => {setState(!state)}}/>
+          <input type="checkbox" className="w-4 h-4 self-center hover:cursor-pointer" onClick={() => {setState(!state); updateCounter(state);}}/>
         </div>
       </div>
     </div>
